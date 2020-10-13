@@ -36,6 +36,6 @@ let month = futureDate.getMonth();
 month = months[month];
 const date = futureDate.getDate();
 
+const weekday = weekdays[futureDate.getDay()];
 
-
-giveaway.textContent = `Giveaway ends on ${date} ${month} ${year} ${hours}:${minutes}`;
+giveaway.textContent = `Giveaway ends on ${weekday}, ${date} ${month} ${year} ${hours}:${minutes}`;
